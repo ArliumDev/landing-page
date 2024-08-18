@@ -49,10 +49,10 @@ a {
 
 .cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 0 20px;
   text-align: center;
-  gap: 10px;
+  gap: 200px;
   width: 550px;
   margin-top: 20px;
 }
@@ -60,6 +60,7 @@ a {
 .card-box {
   border: 2px solid red;
   height: 100px;
+  width: 100px;
   margin: auto;
 }
 
