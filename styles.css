@@ -15,6 +15,9 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+button, a {
   cursor: pointer;
 }
 
@@ -26,12 +29,23 @@ a {
   color: #fff;
 }
 
-.header, .links, .hero-section, .image-placeholder, .card-section, .cards, .call-to-action, .footer {
+.header, .links, .hero-section, .image-placeholder, .card-section, .cards, .call-to-action, .footer, .card, .quote-container, .author {
   display: flex;
 }
 
-.header {
+.card-section, .card {
+  flex-direction: column;
+}
+
+.header, .hero-section, .image-placeholder, .footer {
   justify-content: center;
+}
+
+.hero-section, .card-section, .card, .quote-container, .call-to-action {
+  align-items: center;
+}
+
+.header {
   gap: 350px;
   padding: 0 200px;
 }
@@ -41,8 +55,6 @@ a {
 }
 
 .hero-section {
-  justify-content: center;
-  align-items: center;
   padding: 50px 200px;
   gap: 100px;
 }
@@ -63,7 +75,6 @@ a {
 
 .image-placeholder {
   background-color: grey;
-  justify-content: center;
   padding: 80px;
 }
 
@@ -72,25 +83,62 @@ a {
 }
 
 .card-section {
-  flex-direction: column;
-  justify-content: space-around;
+  margin-top: 30px;
 }
 
 .cards {
-  justify-content: space-around;
+  gap: 80px;
+  margin-bottom: 50px;
+}
+
+.card {
+  width: 150px;
+  margin-top: 20px;
+}
+
+.card-box {
+  border: 4px solid #3b82f6;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  width: 150px;
+  height: 150px;
+}
+
+.quote-container {
+  background: #e5e7eb;
+  height: 300px;
 }
 
 .quote {
-  text-align: center;
+  font-size: 22px;
+  font-style: italic;
+  width: 525px;
+  margin: auto;
+}
+
+.author {
+  justify-content: flex-end;
+  font-weight: bold;
 }
 
 .call-to-action {
   justify-content: space-around;
+  background: #3b82f6;
+  color: white;
+  border-radius: 5px;
   width: 900px;
-  margin: auto;
+  margin: 50px auto;
+  padding: 50px 20px;
+}
+
+.cat-signup {
+  background: #3b82f6;
+  border: 2px solid white;
+  border-radius: 5px;
+  height: 30px;
+  padding: 0px 20px;
 }
 
 .footer {
-  justify-content: center;
   padding: 20px;
 }
